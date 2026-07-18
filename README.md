@@ -79,14 +79,6 @@ source .venv/bin/activate
 uv add groq python-dotenv pypdf pydantic
 ```
 
-or if you have a `requirements.txt`:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
 ## 4. Create a `.env` File
 
 Create a `.env` file in the project root.
