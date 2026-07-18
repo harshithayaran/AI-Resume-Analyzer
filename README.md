@@ -38,3 +38,117 @@ The application extracts text from PDF files, sends the resume and job descripti
 - OpenAI & Gemini Support
 - Export Analysis to PDF
 - RAG-powered Skill Recommendations
+
+## Prerequisites
+- Python 3.11+
+- Groq API Key
+- Internet Connection
+- 
+# 🚀 How to Run the Project
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/<your-username>/AI-Resume-Analyzer.git
+cd AI-Resume-Analyzer
+```
+## 2. Create a Virtual Environment
+Using `uv`:
+```bash
+uv venv
+```
+Activate it:
+
+### Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+### macOS/Linux
+
+```bash
+source .venv/bin/activate
+```
+
+---
+
+## 3. Install Dependencies
+
+```bash
+uv add groq python-dotenv pypdf pydantic
+```
+
+or if you have a `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 4. Create a `.env` File
+
+Create a `.env` file in the project root.
+
+```env
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+---
+
+## 5. Add Your PDFs
+
+Update the file paths in the code or place your files in the desired directory.
+
+Example:
+
+```python
+resume_path = r"C:\Users\YourName\Resume.pdf"
+
+job_description_path = r"C:\Users\YourName\JobDescription.pdf"
+```
+
+---
+
+## 6. Run the Project
+
+```bash
+python resume_checker.py
+```
+
+or with `uv`:
+
+```bash
+uv run python resume_checker.py
+```
+
+---
+
+## Example Output
+
+```
+Overall Match: 82%
+
+Matching Skills:
+- Python
+- SQL
+- Machine Learning
+
+Missing Skills:
+- Docker
+- Kubernetes
+
+Strengths:
+- Strong problem-solving skills
+- Good programming fundamentals
+
+Weaknesses:
+- Limited cloud experience
+
+Suggestions:
+- Learn Docker
+- Learn Kubernetes
+- Build deployment projects
+```
+
