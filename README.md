@@ -43,7 +43,7 @@ The application extracts text from PDF files, sends the resume and job descripti
 - Python 3.11+
 - Groq API Key
 - Internet Connection
-- 
+- QUADRNT Api key and cluster endpoint
 # 🚀 How to Run the Project
 
 ## 1. Clone the Repository
